@@ -1,32 +1,94 @@
+/* Main Page */
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
   }
-}
+  hr.main-hr {
+    background-color: #dbdbdb;
+    height: 1px;
+    width: 80%;
+  }
+  .enter-name {
+    font-size: 120px;
+    color: #dbdbdb;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0 0 30px 0;
+  }
+  .enter-text {
+    color: #81e4ff83;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px 0 20px 0;
+  }
+  .opening-text {
+    margin-bottom: 30px;
+  }
+  .enter-site {
+      padding: 20px 30px 20px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 25px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+      background-color: rgba(56, 56, 56, 0);
+      border: 1px solid white;
+      color: white;
+  }
+  .enter-site:focus {
+    outline: 0
+  }
+  .enter-site:hover {
+    border: none;
+    background-color: #81e4ff83;
+    color: white;
+  }
+
+  /* Navigation Bar */
+
+  div.dropdown-menu.dropdown-menu-right.show {
+    background-color: rgb(52, 58, 64, 0.95);
+    margin-top: 30px;
+  }
+  button.dropdown-item:hover {
+    background-color: rgb(52, 58, 64, 0.5)
+  }
+  nav.navbar.navbar-expand-md.navbar-dark.bg-dark {
+    padding: 20px 20px 20px 20px;
+  }
+  a.navbar-brand {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .navbar-brand {
+    color: rgba(255,255,255,.7) !important;
+  }
+
+  /* Home page */
+
+  .home-page {
+    border: 1px solid blue;
+    display: flex;
+  }
+  img.home-image {
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 15px -2px rgba(0,0,0,0.75);
+  }
+  .home-welcome-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
