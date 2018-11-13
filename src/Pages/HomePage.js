@@ -38,7 +38,18 @@ class HomePage extends Component {
               <hr className="small-hr" />
               <p>Learn more about me and what I enjoy in my free time.</p>
               <div className="home-about-images">
-                <img src="./fam.jpg" alt="fam" />
+                <div className="home-about-image">
+                  <img src="./fam.jpg" alt="fam" />
+                  <p>My Family Picture</p>
+                </div>
+                <div className="home-about-image">
+                  <img src="./fam.jpg" alt="fam" />
+                  <p>My Family Picture</p>
+                </div>
+                <div className="home-about-image">
+                  <img src="./fam.jpg" alt="fam" />
+                  <p>My Family Picture</p>
+                </div>
               </div>
               <div className="about-me-button">
                 <Link to="/about"><button className="page-button">More About Me</button></Link>
