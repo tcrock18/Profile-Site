@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 
 import Navigation from '../components/Navigation'
 import { withGlobalState } from 'react-globally'
@@ -13,16 +14,29 @@ class HomePage extends Component {
           <div className="home-page">
             <div className="home-welcome-text">
               <h1>{this.props.globalState.userName}, Welcome To My Site.</h1>
-              <hr />
-              <p>I am a full stack Javascript developer with a focus on front-end development.</p>
-              <p>A few of my favorite frameworks include:</p>
-              <div>
+              <hr className="small-hr" />
+              <p>I am a full stack Javascript developer with a passion for front-end development.</p>
+            </div>
+
+            <div className="home-page-main">
+              <p>I enjoy learning new technology and frameworks. Currently, a few of my favorite frameworks to 
+                build my projects with include:</p>
+              <div className="framework-logos">
                 <a rel="noopener noreferrer" target="_blank" href="https://reactjs.org/"><img src="./react-logo.png" alt="react js" className="react-logo"/></a>
                 <a rel="noopener noreferrer" target="_blank" href="https://facebook.github.io/react-native/"><img src="./react-native-logo.png" alt="react js" className="react-native-logo"/></a>
                 <a rel="noopener noreferrer" target="_blank" href="https://graphql.org/"><img src="./graphql.jpeg" alt="react js" className="graphql-logo"/></a>
                 <a rel="noopener noreferrer" target="_blank" href="https://www.mongodb.com/"><img src="./mongodb-logo.png" alt="react js" className="mongo-logo"/></a>
               </div>
+              <div className="more-projects">
+                <p>See projects I have built using these technologies and more.</p>
+                <Link to="/projects"><button className="page-button">See Projects</button></Link>
+              </div>
             </div>
+            
+            <div className="home-about">
+              <h2>Let's Get Personal</h2>
+            </div>
+
           </div>
         
       </div>

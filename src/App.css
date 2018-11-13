@@ -69,33 +69,16 @@
     color: white;
   }
 
-  /* Navigation Bar */
-
-  div.dropdown-menu.dropdown-menu-right.show {
-    background-color: rgb(52, 58, 64, 0.95);
-    margin-top: 30px;
-  }
-  button.dropdown-item:hover {
-    background-color: rgb(52, 58, 64, 0.5)
-  }
-  nav.navbar.navbar-expand-md.navbar-dark.bg-dark {
-    padding: 20px 20px 20px 20px;
-  }
-  a.navbar-brand {
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  .navbar-brand {
-    color: rgba(255,255,255,.7) !important;
-  }
-
   /* Home page */
 
   .home-welcome-text {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    margin-bottom: 20px;
     text-align: center;
+    padding-bottom: 3%;
+    padding-top: 3%;
   }
   .home-welcome-text h1 {
     font-size: 80px;
@@ -108,7 +91,7 @@
     margin-right: 10%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-  .home-welcome-text hr {
+  .small-hr {
     background-color: black;
     height: 1px;
     width: 60%;
@@ -142,4 +125,81 @@
   }
   .mongo-logo:hover {
     opacity: .5;
+  }
+  .more-projects {
+    margin-top: 1%;
+  }
+  .home-page-main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #e0dfdf;
+  }
+  .home-page-main p {
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .framework-logos img {
+    margin: 2.5%;
+  }
+  .home-about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+  .home-about h2 {
+    font-size: 80px;
+    margin-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  /* Global Styles */
+
+
+  /* Navigation Bar */
+
+  div.dropdown-menu.dropdown-menu-right.show {
+    background-color: rgb(52, 58, 64, 0.95);
+    margin-top: 30px;
+  }
+  button.dropdown-item:hover {
+    background-color: rgb(52, 58, 64, 0.5)
+  }
+  nav.navbar.navbar-expand-md.navbar-dark.bg-dark {
+    padding: 20px 20px 20px 20px;
+  }
+  a.navbar-brand {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .navbar-brand {
+    color: rgba(255,255,255,.7) !important;
+  }
+
+  .page-button {
+    padding: 20px 30px 20px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: rgba(56, 56, 56, 0);
+    border: 1px solid black;
+    color: black;
+  }
+  .page-button:hover {
+    border: none;
+    background-color: #0a6b86;
+    color: white;
+    cursor: pointer;
+  }
+  .page-button:focus {
+    outline: 0
   }
