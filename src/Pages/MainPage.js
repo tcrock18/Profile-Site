@@ -7,9 +7,9 @@ import '../App.css'
 
 class Main extends Component {
 
-  updateUserName = (userName) => {
+  updateUserName = (e) => {
     this.props.setGlobalState({
-      userName: userName
+      userName: e.target.value
     })
 }
 
@@ -23,13 +23,10 @@ class Main extends Component {
             <p className="enter-text">Front-End Javascript Developer</p>
           </div>
           <form>
-            <label>
-              Enter Name:
-              <input type="text" name="name" />
-            </label>
-            <Link to="/home"><input type="submit" value="Enter Site" /></Link>
+              <input className="enter-input" type="text" placeholder="Enter Your Name" value={this.props.globalState.userName} onChange={this.updateUserName}/>
+            <br />
+            <Link to="/home"><input type="submit" value="Continue" className="enter-site"/></Link>
           </form>
-            <button className="enter-site">Learn More</button>
         </header>
       </div>
     );
