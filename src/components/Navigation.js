@@ -12,6 +12,9 @@ import {
     DropdownMenu,
     DropdownItem } from 'reactstrap';
 
+import { withGlobalState } from 'react-globally'
+
+
 class Navigation extends Component {
     state = {
         isOpen: false
@@ -43,7 +46,7 @@ class Navigation extends Component {
 
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle color="primary" nav caret>
-                  Stalk Me
+                  {this.props.globalState.userName} Stalk Me Here
                 </DropdownToggle>
                 <DropdownMenu color="primary" right>
                 
@@ -74,4 +77,4 @@ class Navigation extends Component {
   }
 }
 
-export default Navigation;
+export default withGlobalState(Navigation);

@@ -13,7 +13,7 @@ class HomePage extends Component {
 
           <div className="home-page">
             <div className="home-welcome-text">
-              <h1>{this.props.globalState.userName}, Welcome To My Site.</h1>
+              <h1>Welcome {this.props.globalState.userName}</h1>
               <hr className="small-hr" />
               <p>I am a full stack Javascript developer with a passion for front-end development.</p>
             </div>
@@ -35,6 +35,14 @@ class HomePage extends Component {
             
             <div className="home-about">
               <h2>Let's Get Personal</h2>
+              <hr className="small-hr" />
+              <p>Learn more about me and what I enjoy in my free time.</p>
+              <div className="home-about-images">
+                <img src="./fam.jpg" alt="fam" />
+              </div>
+              <div className="about-me-button">
+                <Link to="/about"><button className="page-button">More About Me</button></Link>
+              </div>
             </div>
 
           </div>
